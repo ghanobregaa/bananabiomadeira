@@ -11,8 +11,8 @@ export default function Navbar() {
           <TbSearch size={18} />
         </div>
         <div className={styles.links}>
-          <div className={styles.link}>
-            <TbShoppingCart size={18} />
+          <div className={styles.cart}>
+            <TbShoppingCart size={20} />
             Carrinho
           </div>
         </div>
