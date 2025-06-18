@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const nagivate = useNavigate();
   return (
     <div>
       <Navbar />
@@ -22,7 +24,12 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.grid}>
-          <div className={styles.card}>
+          <div
+            className={styles.card}
+            onClick={() =>
+              nagivate("/details/d1ed4dc9-eed4-4668-ba25-5179aeea8d4e")
+            }
+          >
             <div className={styles.productImg}>
               <img src="product.png" />
             </div>
