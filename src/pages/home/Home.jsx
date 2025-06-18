@@ -23,17 +23,11 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           <div className={styles.card}>
-            <div className={styles.cardImg}></div>
-            <div className={styles.cardContent}>
-              <div className={styles.rowCard}>
-                <div className={styles.columnCard}>
-                  <div className={styles.description}>
-                    Banana biológica desidratada da Madeira
-                  </div>
-                  <div className={styles.options}>100g, 200g</div>
-                </div>
-                <div className={styles.price}>1.56€</div>
-              </div>
+            <div className={styles.cardImg}>
+              <img src="product.png" />
+            </div>
+            <div className={styles.description}>
+              <div>Banana biológica desidratada da Madeira</div>
             </div>
           </div>
         </div>

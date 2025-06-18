@@ -66,12 +66,12 @@
   margin-top: 2rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
 
 .card {
-  overflow: hidden;
+  width: 100%;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -79,46 +79,17 @@
 
 .cardImg {
   width: 100%;
-  aspect-ratio: 1/1;
-  background-image: url("/product.png");
-  background-position: center;
-  background-size: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cardImg img {
+  width: 100%;
 }
 
 .description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  padding: 0.5rem 1rem;
   font-size: 18px;
-  color: #000;
-  font-weight: 600;
-}
-.options {
-  font-size: 14px;
-  color: #525252;
-}
-
-.cardContent {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  padding: 1rem;
-}
-
-.rowCard {
-  gap: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.columnCard {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.price {
-  flex: 1;
-  font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
 }
