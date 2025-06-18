@@ -23,11 +23,12 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           <div className={styles.card}>
-            <div className={styles.cardImg}>
+            <div className={styles.productImg}>
               <img src="product.png" />
             </div>
             <div className={styles.description}>
-              <div>Banana biológica desidratada da Madeira</div>
+              <p>Banana biológica desidratada da Madeira</p>
+              <p>100g, 200g</p>
             </div>
           </div>
         </div>
