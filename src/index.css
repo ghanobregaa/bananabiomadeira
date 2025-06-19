@@ -6,13 +6,24 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: min(1280px, 100% - 2em);
+  margin: auto;
+}
+
 :root {
   --font-size: 16px;
   --font-size-header: 34px;
+  --font-size-details: 34px;
+  --font-size-details-price: 34px;
+  --font-size-checkout-header: 24px;
 }
 @media only screen and (max-width: 950px) {
   :root {
     --font-size: 14px;
     --font-size-header: 20px;
+    --font-size-details: 20px;
+    --font-size-details-price: 20px;
+    --font-size-checkout-header: 18px;
   }
 }

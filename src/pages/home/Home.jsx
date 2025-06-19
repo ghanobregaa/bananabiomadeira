@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.banner}>
           <div className={styles.bannerImg}></div>
 

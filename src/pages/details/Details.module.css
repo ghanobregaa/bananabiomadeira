@@ -1,5 +1,5 @@
 .container {
-  width: min(1280px, 100% - 1em);
+  width: min(1280px, 100% - 2em);
   margin: auto;
 }
 
@@ -11,6 +11,9 @@
 @media only screen and (max-width: 700px) {
   .row {
     grid-template-columns: 1fr;
+  }
+  .description {
+    padding: 0px !important;
   }
 }
 
@@ -66,11 +69,127 @@
 
 .title {
   font-weight: 900;
-  font-size: 40px;
+  font-size: var(--font-size-details);
   text-transform: uppercase;
   color: green;
 }
 
 .info {
+  margin-top: 1em;
   color: #999;
+}
+
+.rowSelect {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.rowSelect div {
+  border: 1px solid #e1e1e1;
+  padding: 7px 14px;
+  font-size: var(--font-size);
+  border-radius: 8px;
+  transition: 0.12s ease-in-out;
+}
+
+.rowSelect div:not(.disabled) {
+  box-shadow: 0px 0px 3px 1px #e1e1e150;
+}
+
+.rowSelect div:not(.disabled, .selected):hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.quant {
+  overflow: hidden;
+  display: flex;
+  border: 1px solid #e1e1e1;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px 1px #e1e1e150;
+}
+
+.quant div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  transition: 0.12s ease-in-out;
+}
+
+.quant div:not(:last-child) {
+  border-right: 1px solid #e1e1e1;
+}
+
+.inputQuant {
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--font-size);
+  border: 1px solid transparent;
+  border-right: 1px solid #e1e1e1;
+  max-width: 50px;
+  overflow: hidden;
+  height: 100%;
+  text-overflow: ellipsis;
+  outline: none;
+}
+
+.minus:hover,
+.plus:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.rowSelect .disabled {
+  background-color: #f5f5f5;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.rowSelect .selected {
+  border-color: green;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}
+
+.price {
+  font-weight: 700;
+  font-size: var(--font-size-details-price);
+}
+
+.btns {
+  margin-top: 1em;
+  display: flex;
+  gap: 0.5em;
+}
+
+.btns button {
+  user-select: none;
+  flex: 1;
+  height: 45px;
+  border-radius: 8px;
+  font-size: var(--font-size);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.12s ease-in-out;
+}
+
+.buy {
+  border: 0;
+  background-color: green;
+  color: #fff;
+}
+
+.buy:hover {
+  background-color: rgb(11, 145, 11);
 }
