@@ -12,11 +12,14 @@
 }
 
 :root {
+  --theme-color: #7b9e40;
   --font-size: 16px;
   --font-size-header: 34px;
   --font-size-details: 34px;
   --font-size-details-price: 34px;
   --font-size-checkout-header: 24px;
+  --font-size-checkout-badge: 14px;
+  --font-size-checkout-total-price: 20px;
 }
 @media only screen and (max-width: 950px) {
   :root {
@@ -25,5 +28,7 @@
     --font-size-details: 20px;
     --font-size-details-price: 20px;
     --font-size-checkout-header: 18px;
+    --font-size-checkout-badge: 12px;
+    --font-size-checkout-total-price: 18px;
   }
 }

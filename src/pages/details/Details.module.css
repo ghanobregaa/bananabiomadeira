@@ -71,7 +71,7 @@
   font-weight: 900;
   font-size: var(--font-size-details);
   text-transform: uppercase;
-  color: green;
+  color: var(--theme-color);
 }
 
 .info {
@@ -156,8 +156,8 @@
 }
 
 .rowSelect .selected {
-  border-color: green;
-  background-color: green;
+  border-color: var(--theme-color);
+  background-color: var(--theme-color);
   color: #fff;
   cursor: pointer;
 }
@@ -186,10 +186,10 @@
 
 .buy {
   border: 0;
-  background-color: green;
+  background-color: var(--theme-color);
   color: #fff;
 }
 
 .buy:hover {
-  background-color: rgb(11, 145, 11);
+  opacity: 0.85;
 }
