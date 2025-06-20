@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import styles from "./Cart.module.css";
 import {
+  TbInfoCircle,
   TbMinus,
   TbPlus,
   TbShoppingBag,
@@ -74,7 +75,9 @@ export default function Cart() {
             </div>
             <div className={styles.rowBetween}>
               <div>Portes de envio</div>
-              <div className={styles.free}>Grátis</div>
+              <div>
+                <TbInfoCircle />
+              </div>
             </div>
             <div className={styles.rowBetween}>
               <div>IVA</div>
